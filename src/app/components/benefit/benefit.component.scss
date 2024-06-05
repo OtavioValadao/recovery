@@ -1,0 +1,50 @@
+@import "../../../color-variables.scss";
+
+.benefit-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  h5 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: $primary-text;
+  }
+
+  p {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 400;
+    line-height: 1.6; // Adicionado para melhor espaçamento entre linhas
+    color: $secondary-text;
+    margin: 0.5rem 0; // Adicionado para melhor espaçamento
+  }
+}
+
+@media (max-width: 768px) {
+  .benefit-card {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    h5 {
+      font-size: 2rem; /* 32px */
+    }
+
+    p {
+      font-size: 1rem; /* 16px */
+      line-height: 1.6; // Adicionado para manter consistência em telas menores
+      margin: 0.5rem 0; // Adicionado para manter consistência em telas menores
+    }
+  }
+}

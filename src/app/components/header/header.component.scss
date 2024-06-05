@@ -1,0 +1,14 @@
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; /* Espaçamento ao redor do header */
+  width: 100%; /* Garantir que o header ocupe toda a largura disponível */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+  overflow: hidden; /* Evitar overflow */
+}
+
+.app-header img {
+  max-width: 100%; /* Garante que a imagem não exceda a largura do container pai */
+  height: auto; /* Mantém a proporção da imagem */
+}

@@ -1,0 +1,44 @@
+<app-header></app-header>
+<main>
+  <section class="main-section pad-70">
+    <div class="head-line">
+      <span>MASTER RECOVERY</span>
+      <h1>Revitalize Seu Corpo e Mente com a Massoterapia da Master Recovery</h1>
+    </div>
+    <img class="rounded-img" ngSrc="assets/foto_leone.png" width="300" height="240" />
+  </section>
+  <section class="benefit-section pad-70">
+    <div class="benefit-data">
+      <h2>
+        Qualidade de vida
+      </h2>
+    </div>
+    <p>
+      Vivencie <b>Experiências Inesquecíveis </b>que transformarão sua vida, tudo no <u>conforto do seu lar.</u> 
+    </p>
+  </section>
+  <section class="cta-section">
+    <btn-primary btn-text="Fale com nossos especialistas"  (click)="redirectToWpp()"></btn-primary>
+  </section>
+ <!-- <newsletter-form></newsletter-form>  -->
+    <section class="benefit-section pad-70">
+    <benefit-card
+      card-title="Equipe capacitada"
+      img-path="/assets/func02.png"
+      card-description={{textoPrimeiraImg}}
+    ></benefit-card>
+    <benefit-card
+      card-title="Mais Saúde"
+      img-path="/assets/func_01.png"
+      card-description={{textoSegundaImg}}
+    >
+    </benefit-card>
+  </section>
+  <section class="cta-section pad-70">
+    <h2>
+      Você gostaria de tirar alguns minutos para relaxar completamente e aliviar o estresse com uma massagem revigorante?
+    </h2>
+    <btn-primary btn-text="fale com nossos especialistas" (click)="redirectToWpp()"></btn-primary>
+  </section>
+  <app-footer></app-footer>
+</main>

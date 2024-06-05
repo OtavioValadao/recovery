@@ -1,0 +1,169 @@
+@import "../../../color-variables.scss";
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+
+  span {
+    font-size: 16px;
+    font-weight: 700;
+    color: $secondary-text;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: $primary-text;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.benefit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  .benefit-data {
+    border-bottom: 10px solid $secondary-color;
+    padding-bottom: 20px;
+    text-align: center;
+
+    h2 {
+      font-size: 48px;
+      font-weight: 600;
+      font-family: "Roboto", sans-serif;
+      color: $primary-text;
+    }
+  }
+
+  p {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+
+    b {
+      background: -webkit-linear-gradient(180deg, $light-primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+    }
+  }
+}
+
+.cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: $primary-text;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-section {
+    flex-direction: row;
+    text-align: left;
+
+    span {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 72px;
+    }
+
+    img {
+      max-width: 50%;
+    }
+  }
+
+  .benefit-section {
+    flex-direction: row;
+    text-align: left;
+
+    .benefit-data {
+      border-bottom: none;
+      border-right: 10px solid $secondary-color;
+      padding-bottom: 0;
+      padding-right: 20px;
+    }
+
+    .benefit-data h2 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 40px;
+    }
+  }
+
+  .cta-section h2 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-section {
+    gap: 60px;
+
+    span {
+      font-size: 24px;
+    }
+
+    h1 {
+      font-size: 80px;
+    }
+  }
+
+  .benefit-section {
+    gap: 60px;
+
+    .benefit-data h2 {
+      font-size: 72px;
+    }
+
+    p {
+      font-size: 48px;
+    }
+  }
+
+  .cta-section h2 {
+    font-size: 72px;
+    padding-bottom: 20px;
+  }
+}
+
+.rounded-img {
+  width: 300px; /* Novo tamanho da imagem */
+  height: auto; /* Manter a proporção original */
+  border-radius: 50%; /* Borda redonda */
+  border: 2px solid #000; /* Opcional: adicionar uma borda ao redor da imagem */
+}
